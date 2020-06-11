@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://wwangbo.github.io/sitemap.xml
