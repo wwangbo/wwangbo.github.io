@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Wanber - A sortware engineering,backend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 10:33:00 +0800</lastBuildDate>
     
 	<atom:link href="https://wwangbo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GO语言数据类型和流程控制</title>
+      <link>https://wwangbo.github.io/post/go_1/</link>
+      <pubDate>Sun, 14 Jun 2020 10:33:00 +0800</pubDate>
+      
+      <guid>https://wwangbo.github.io/post/go_1/</guid>
+      <description>1111</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://wwangbo.github.io/post/git/</link>
+      <pubDate>Fri, 12 Jun 2020 11:49:07 +0800</pubDate>
+      
+      <guid>https://wwangbo.github.io/post/git/</guid>
+      <description>Git的特点 最优的存储能力 非凡的性能 开源的 很容易做备份 支持离线操作 很容易定制工作流程 安装地址:https://git-scm.com/boo</description>
+    </item>
     
     <item>
       <title>go语言入门笔记</title>

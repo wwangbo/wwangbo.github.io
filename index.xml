@@ -6,7 +6,7 @@
     <description>Recent content on Wanber - A sortware engineering,backend</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 10:33:00 +0800</lastBuildDate>
     
         <atom:link href="https://wwangbo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,6 +22,97 @@
 &lt;p&gt;长沙链学小窗科技有限公司联合创始人。&lt;/p&gt;
 &lt;p&gt;大学期间实习于华为、CVTE等公司。&lt;/p&gt;
 &lt;p&gt;现就职于Grab北京研发中心&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>GO语言数据类型和流程控制</title>
+      <link>https://wwangbo.github.io/post/go_1/</link>
+      <pubDate>Sun, 14 Jun 2020 10:33:00 +0800</pubDate>
+      
+      <guid>https://wwangbo.github.io/post/go_1/</guid>
+      
+        <description>&lt;p&gt;1111
+&lt;img src=&#34;https://wwangbo.github.io/img/4A3232B1-4ED2-4036-9143-42B28223B018.png&#34; alt=&#34;数据类型&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://wwangbo.github.io/post/git/</link>
+      <pubDate>Fri, 12 Jun 2020 11:49:07 +0800</pubDate>
+      
+      <guid>https://wwangbo.github.io/post/git/</guid>
+      
+        <description>&lt;h3 id=&#34;git的特点&#34;&gt;Git的特点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;最优的存储能力&lt;/li&gt;
+&lt;li&gt;非凡的性能&lt;/li&gt;
+&lt;li&gt;开源的&lt;/li&gt;
+&lt;li&gt;很容易做备份&lt;/li&gt;
+&lt;li&gt;支持离线操作&lt;/li&gt;
+&lt;li&gt;很容易定制工作流程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装地址:https://git-scm.com/book/zh/v2.%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git&lt;/p&gt;
+&lt;p&gt;查看是否安装成功:git &amp;ndash;version&lt;/p&gt;
+&lt;h3 id=&#34;git最小配置&#34;&gt;Git最小配置&lt;/h3&gt;
+&lt;p&gt;配置user信息:即配置user.name和user.email&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config —-global user.name = ‘your name’
+git config —-global user.email ‘your email’
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;git config共有三个作用域&lt;/p&gt;
+&lt;p&gt;缺省等同于local&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --local 只对某个仓库有效
+git config --global global对当前用户所有仓库有效
+gut config --system system对系统所有登录的用户有效
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;显示config的配置，加&amp;ndash;list&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --list --local
+git config --list --global
+git config --list --system
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;配置优先级local &amp;gt; global &amp;gt; system&lt;/p&gt;
+&lt;h3 id=&#34;创建git仓库&#34;&gt;创建git仓库&lt;/h3&gt;
+&lt;p&gt;1、把已有的项目代码纳入git管理&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd 项目所在文件夹
+git init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2、新建的项目直接用git管理&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd 某个文件夹
+git init projectname
+cd projectname
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提交代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git add name 添加到暂存区里,可以一次提交多个文件，可以用-u添加所有文件
+git commit -m&#39;Add readme&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;git status查看git状态
+git log查看提交记录&lt;/p&gt;
+&lt;p&gt;文件重命名&lt;/p&gt;
+&lt;p&gt;方式一:
+工作区重命名(mv name new_name)
+git add
+git rm
+方式二：git mv name new_name&lt;/p&gt;
+&lt;p&gt;git log详解&lt;/p&gt;
+&lt;p&gt;简单看一下列表：git log &amp;ndash;oneline
+最近四条:git log -n4
+查看所有分支的版本历史:git log &amp;ndash;all
+图形化地查看多个分支演进:git log &amp;ndash;all &amp;ndash;graph
+git branch -v可以查看有多少分支&lt;/p&gt;
+&lt;p&gt;通过gitk可以使用图形界面工具来看版本历史&lt;/p&gt;
+&lt;p&gt;git有三种文件类型commit、tree(文件夹)、blob(文件)&lt;/p&gt;
+&lt;p&gt;删除:git branch -d branch_name、git branch -D branch_name&lt;/p&gt;
+&lt;p&gt;修改commit最近一次提交的message:git commit &amp;ndash;amend
+修改老的commit的message：git rebase -i id号
+合并多个commit:git rebase -i id号&lt;/p&gt;
+&lt;p&gt;比较暂存区和head的区别:git diff &amp;ndash;cached
+比较工作区和暂存区的区别:git diff&lt;/p&gt;
+&lt;p&gt;把暂存区恢复到和head一样:git reset HEAD
+把工作区恢复到跟暂存区一样:git checkout &amp;ndash; filename
+取消暂存区部分文件的修改:git reset HEAD &amp;ndash; filename
+消除最近的几次提交&lt;/p&gt;
+&lt;p&gt;消除最近的几次提交:git reset &amp;ndash;hard 指定位置的id&lt;/p&gt;
+&lt;p&gt;开发中临时加塞紧急任务处理:&lt;/p&gt;
+&lt;p&gt;git stash//存起来，工作区清除
+git stash list
+git stash applay//恢复&lt;/p&gt;
 </description>
       
     </item>
